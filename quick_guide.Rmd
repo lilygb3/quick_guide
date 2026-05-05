@@ -1,5 +1,16 @@
 ---
 title: "Quick Guide to Getting Started in Data Science for Psychologists"
+author: "Lily Botha"
 output: html_document
 ---
 
+## Start with the course website
+
+
+## Understand the big picture of the course
+
+
+## Use all course materials
+
+
+## Meet the main tools
