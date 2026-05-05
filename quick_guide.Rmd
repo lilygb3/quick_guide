@@ -4,13 +4,121 @@ author: "Lily Botha"
 output: html_document
 ---
 
-## Start with the course website
+Welcome to Data Science for Psychologists!
+
+### Start with the course website
+
+The course website is your home base. This is where you should begin when you are trying to figure out what to do for a module, lab, activity, or assignment. The website links together the major course materials, including lecture notes, videos, slides, labs, readings, and GitHub resources. Dr. Garrison notes that while course materials can also be accessed through GitHub, the course notes website is usually the easiest place to navigate from. 
+
+### Understand the big picture of the course
+
+This class isn't just about memorizing R functions. Data Science introduces students to data wrangling, modeling, visualization, and communication. The course is built around five major ideas: 
+
+*insert table*
+
+The main goal is to help you build a thoughtful workflow for working with data. 
+
+### Use all course materials
+
+All of the different materials, like the videos, lecture notes, tutorials, activities, and labs, can seem like a lot of overwhelming information. But trust me, after going through this course, you should start by using as many materials as you can. After a while, you will learn which ones work the best for you. You dont neccesarily neeed to always use every single material. 
+
+*insert table*
+
+### Meet the main tools
+
+A lot of the class will involve learning how different tools work together. The basic toolkit includes R, RStudio, Git, and GitHub. 
+
+*insert table*
+
+One way to think about it: R is the language, RStudio is where you use it, Git tracks your changes, and GitHub stores those changes online. 
+
+### Git and GitHub
+
+Git and GitHub are related, but they are not the same. Git tracks changes to files over time. GitHub is the web-based platform where Git-tracked projects can be stored and shared. 
+Getting Git, GitHub, RStudio, and your computor to work together can be frustrating at first. Installation and configuration can be half the battle. 
+
+At the beginning, its helpful to focus on the main GitHub cycle/steps:
+1. Make changes to your work.
+2. Save your files.
+3. Commit your changes.
+4. Push your changes to GitHub.
+5. Check GitHub to make sure your work appeared online.
+
+### Build a thoughtful workflow
+
+*Workflow matters.* The workflow can be just as important as learning the language. A strong workflow means knowing:
+- where your files live
+- where your data is stored
+- how your code is saved
+- how your results are created
+- how your work is documented
+- how your progress is tracked through GitHub
+
+### Use RStudio projects
+
+RStudio projects can really help with organizing your work. A project keeps all the files for one analysis together, including data, scripts, figures, outputs, and reports. Organizing work into projects helps you avoid getting confused about where your files are and where R is looking for data. 
+
+A good project folder might include: 
+*insert table*
+
+Try not to rely only on the Console. Save your code in scripts of R Markdown documents so you can rerun it later. 
+
+### Remember that R is literal
+
+R is very powerful, but its also veyr picky. If your object is named lily_rocks but you type lilyrocks, R won't understand. Typos, capitalization, spaces, and punctuation matter. learning how to give precise instructions is very important for this class. Its also helpful to practice building your own personal code rules, like always putting your titles in snake_case. If you are using R in the future, its helpful to stay consistent. 
+
+A few beginner habits that might help: 
+*insert table*
+
+### Understand reproducibility
+
+Reproducibility means that someone else (or your future self) can recreate your work from your code and data. Reproducibility is central to data science practices. One thing that really helped me out in this class is writing little notes to myself within the code that explains what it means/does (you can do this by putting # in front of the sentence)
+
+In this class, reproducible work means: 
+*insert table*
+
+A simple test: could you reopen your project in a month and understand what you did? if not, add more comments, organize better, and make your workflow clearer. 
+
+### Portfolios
+
+The portfolios are more than just a collection of final products. It should be a record of your practice. it should show how your thinking developed over time through tying, revising, exploring, and reflecting. 
+
+Each portfolio could include: 
+*insert table*
+
+The portfolio is a place to show growth. Some pieces may be finished and polished, while others may be experiemntal or unfinishied. What matters is that they show your process. 
+
+### A typical weekly workflow
+
+It took me a while to figure out all the moving parts of this class, so don't feel bad if theres a big learning curve. Thats why I wrote this guide!
+
+Here is a simple workflow you can follow for most modules or asisngments:
+1. Start on the course notes website.
+2. Find the correct module.
+3. Watch the assigned videos.
+4. Review the slides and lecture notes.
+5. Read the assigned textbook or tutorial sections.
+6. Open the activity or lab instructions.
+7. Open the correct RStudio Project.
+8. Work in an R script or R Markdown document.
+9. Run your code carefully.
+10. Add comments and written explanations.
+11. Knit or render your document if needed.
+12. Commit your changes.
+13. Push your work to GitHub.
+14. Check GitHub to make sure your work is there.
+
+### Troubleshooting tips
+
+Be prepared to mess up. A lot. Errors are normal. They are a big part of learning R and GitHub. 
+
+here are some common errors I've encountered and some things you can try: 
+*insert table*
 
 
-## Understand the big picture of the course
 
 
-## Use all course materials
 
 
-## Meet the main tools
+
+
