@@ -356,7 +356,13 @@ Science for Psychologists</h1>
 </div>
 
 
-<p>Welcome to Data Science for Psychologists!</p>
+<div id="welcome-to-data-science-for-psychologists" class="section level2">
+<h2>Welcome to Data Science for Psychologists!</h2>
+<p>This guide is meant to help future students get oriented and
+understand how the different parts of the class fit together. It is not
+a replacement for the course materials, but it can help you figure out
+where to start, what tools you will use, and how to build a workflow
+that makes the class feel more manageable.</p>
 <div id="start-with-the-course-website" class="section level3">
 <h3>Start with the course website</h3>
 <p>The course website is your home base. This is where you should begin
@@ -371,117 +377,584 @@ easiest place to navigate from.</p>
 <h3>Understand the big picture of the course</h3>
 <p>This class isn’t just about memorizing R functions. Data Science
 introduces students to data wrangling, modeling, visualization, and
-communication. The course is built around five major ideas:</p>
-<p><em>insert table</em></p>
+communication.</p>
+<p>The course is built around five major ideas:</p>
+<pre class="r"><code>big_ideas &lt;- tribble(
+  ~`Big Idea`, ~`What It Means`,
+  &quot;Reproducibility&quot;, &quot;Your work should be possible to rerun, check, and verify.&quot;,
+  &quot;Replication&quot;, &quot;Data work should support trustworthy and repeatable scientific practice.&quot;,
+  &quot;Robust Methods&quot;, &quot;Your analyses should be thoughtful, reliable, and appropriate for the question.&quot;,
+  &quot;Resplendent Visualizations&quot;, &quot;Graphs should communicate clearly, honestly, and effectively.&quot;,
+  &quot;R Programming&quot;, &quot;You will learn to use R as a practical tool for working with data.&quot;
+)
+
+big_ideas |&gt;
+  kable()</code></pre>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="74%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Big Idea</th>
+<th align="left">What It Means</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Reproducibility</td>
+<td align="left">Your work should be possible to rerun, check, and
+verify.</td>
+</tr>
+<tr class="even">
+<td align="left">Replication</td>
+<td align="left">Data work should support trustworthy and repeatable
+scientific practice.</td>
+</tr>
+<tr class="odd">
+<td align="left">Robust Methods</td>
+<td align="left">Your analyses should be thoughtful, reliable, and
+appropriate for the question.</td>
+</tr>
+<tr class="even">
+<td align="left">Resplendent Visualizations</td>
+<td align="left">Graphs should communicate clearly, honestly, and
+effectively.</td>
+</tr>
+<tr class="odd">
+<td align="left">R Programming</td>
+<td align="left">You will learn to use R as a practical tool for working
+with data.</td>
+</tr>
+</tbody>
+</table>
 <p>The main goal is to help you build a thoughtful workflow for working
-with data.</p>
+with data. In other words, this course is not only about learning how to
+code. It is about learning how to organize, document, analyze,
+visualize, and communicate data in a reproducible way.</p>
 </div>
 <div id="use-all-course-materials" class="section level3">
 <h3>Use all course materials</h3>
-<p>All of the different materials, like the videos, lecture notes,
-tutorials, activities, and labs, can seem like a lot of overwhelming
-information. But trust me, after going through this course, you should
-start by using as many materials as you can. After a while, you will
-learn which ones work the best for you. You dont neccesarily neeed to
-always use every single material.</p>
-<p><em>insert table</em></p>
+<p>The different materials, including videos, lecture notes, tutorials,
+activities, readings, and labs, can feel like a lot at first. However,
+they are designed to work together. After going through the course, my
+advice is to start by using as many materials as you can. Over time, you
+will learn which ones are most helpful for your own learning style.</p>
+<p>You do not necessarily need to use every single material every single
+time, but early in the course, it helps to explore all of them so you
+understand what each resource is for.</p>
+<pre class="r"><code>materials &lt;- tribble(
+  ~`Resource`, ~`How to Use It`,
+  &quot;Course notes website&quot;, &quot;Start here for each module, lab, activity, and assignment.&quot;,
+  &quot;Videos&quot;, &quot;Use these to see concepts and workflows explained step-by-step.&quot;,
+  &quot;Slides&quot;, &quot;Use these to review lecture material and follow along with class content.&quot;,
+  &quot;Textbook/readings&quot;, &quot;Use these for deeper explanations when concepts are confusing.&quot;,
+  &quot;Activities&quot;, &quot;Use these to practice smaller pieces of the workflow.&quot;,
+  &quot;Labs&quot;, &quot;Use these to apply skills in a fuller, project-like format.&quot;,
+  &quot;GitHub&quot;, &quot;Use this to store, track, and share your work.&quot;,
+  &quot;Portfolio&quot;, &quot;Use this to show your growth, process, and data science practice over time.&quot;
+)
+
+materials |&gt;
+  kable()</code></pre>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Resource</th>
+<th align="left">How to Use It</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Course notes website</td>
+<td align="left">Start here for each module, lab, activity, and
+assignment.</td>
+</tr>
+<tr class="even">
+<td align="left">Videos</td>
+<td align="left">Use these to see concepts and workflows explained
+step-by-step.</td>
+</tr>
+<tr class="odd">
+<td align="left">Slides</td>
+<td align="left">Use these to review lecture material and follow along
+with class content.</td>
+</tr>
+<tr class="even">
+<td align="left">Textbook/readings</td>
+<td align="left">Use these for deeper explanations when concepts are
+confusing.</td>
+</tr>
+<tr class="odd">
+<td align="left">Activities</td>
+<td align="left">Use these to practice smaller pieces of the
+workflow.</td>
+</tr>
+<tr class="even">
+<td align="left">Labs</td>
+<td align="left">Use these to apply skills in a fuller, project-like
+format.</td>
+</tr>
+<tr class="odd">
+<td align="left">GitHub</td>
+<td align="left">Use this to store, track, and share your work.</td>
+</tr>
+<tr class="even">
+<td align="left">Portfolio</td>
+<td align="left">Use this to show your growth, process, and data science
+practice over time.</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="meet-the-main-tools" class="section level3">
 <h3>Meet the main tools</h3>
 <p>A lot of the class will involve learning how different tools work
 together. The basic toolkit includes R, RStudio, Git, and GitHub.</p>
-<p><em>insert table</em></p>
-<p>One way to think about it: R is the language, RStudio is where you
-use it, Git tracks your changes, and GitHub stores those changes
-online.</p>
+<pre class="r"><code>tools &lt;- tribble(
+  ~`Tool`, ~`What It Is`, ~`Why It Matters`,
+  &quot;R&quot;, &quot;A free software environment for statistics and graphics.&quot;, &quot;This is the main coding language used in the course.&quot;,
+  &quot;RStudio&quot;, &quot;An interface, or IDE, for using R.&quot;, &quot;This is where you write, run, and organize code.&quot;,
+  &quot;R Markdown&quot;, &quot;A document format that combines writing, code, tables, and figures.&quot;, &quot;This helps make reports reproducible.&quot;,
+  &quot;Git&quot;, &quot;A version control system.&quot;, &quot;This tracks changes to your files over time.&quot;,
+  &quot;GitHub&quot;, &quot;An online platform for Git-tracked projects.&quot;, &quot;This stores, shares, and organizes your work.&quot;
+)
+
+tools |&gt;
+  kable()</code></pre>
+<table>
+<colgroup>
+<col width="8%" />
+<col width="51%" />
+<col width="40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Tool</th>
+<th align="left">What It Is</th>
+<th align="left">Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">R</td>
+<td align="left">A free software environment for statistics and
+graphics.</td>
+<td align="left">This is the main coding language used in the
+course.</td>
+</tr>
+<tr class="even">
+<td align="left">RStudio</td>
+<td align="left">An interface, or IDE, for using R.</td>
+<td align="left">This is where you write, run, and organize code.</td>
+</tr>
+<tr class="odd">
+<td align="left">R Markdown</td>
+<td align="left">A document format that combines writing, code, tables,
+and figures.</td>
+<td align="left">This helps make reports reproducible.</td>
+</tr>
+<tr class="even">
+<td align="left">Git</td>
+<td align="left">A version control system.</td>
+<td align="left">This tracks changes to your files over time.</td>
+</tr>
+<tr class="odd">
+<td align="left">GitHub</td>
+<td align="left">An online platform for Git-tracked projects.</td>
+<td align="left">This stores, shares, and organizes your work.</td>
+</tr>
+</tbody>
+</table>
+<p>One helpful way to think about it is this: R is the language, RStudio
+is where you use it, Git tracks your changes, and GitHub stores those
+changes online.</p>
 </div>
 <div id="git-and-github" class="section level3">
 <h3>Git and GitHub</h3>
 <p>Git and GitHub are related, but they are not the same. Git tracks
 changes to files over time. GitHub is the web-based platform where
-Git-tracked projects can be stored and shared. Getting Git, GitHub,
-RStudio, and your computor to work together can be frustrating at first.
-Installation and configuration can be half the battle.</p>
-<p>At the beginning, its helpful to focus on the main GitHub
-cycle/steps: 1. Make changes to your work. 2. Save your files. 3. Commit
-your changes. 4. Push your changes to GitHub. 5. Check GitHub to make
-sure your work appeared online.</p>
+Git-tracked projects can be stored and shared.</p>
+<p>Getting Git, GitHub, RStudio, and your computer to work together can
+be frustrating at first. Installation and configuration can be half the
+battle. If it feels confusing in the beginning, that does not mean you
+are doing anything wrong. It is a normal part of learning the
+workflow.</p>
+<p>At the beginning, it is helpful to focus on the main GitHub
+cycle:</p>
+<ol style="list-style-type: decimal">
+<li>Make changes to your work.</li>
+<li>Save your files.</li>
+<li>Commit your changes.</li>
+<li>Push your changes to GitHub.</li>
+<li>Check GitHub to make sure your work appeared online.</li>
+</ol>
 </div>
 <div id="build-a-thoughtful-workflow" class="section level3">
 <h3>Build a thoughtful workflow</h3>
 <p><em>Workflow matters.</em> The workflow can be just as important as
-learning the language. A strong workflow means knowing: - where your
-files live - where your data is stored - how your code is saved - how
-your results are created - how your work is documented - how your
+learning the language itself. A strong workflow means knowing: - where
+your files live - where your data is stored - how your code is saved -
+how your results are created - how your work is documented - how your
 progress is tracked through GitHub</p>
+<p>In this class, you are not just learning isolated R functions. You
+are learning how to work like a data scientist by keeping your work
+organized, transparent, and reproducible.</p>
 </div>
 <div id="use-rstudio-projects" class="section level3">
 <h3>Use RStudio projects</h3>
-<p>RStudio projects can really help with organizing your work. A project
+<p>RStudio Projects can really help with organizing your work. A project
 keeps all the files for one analysis together, including data, scripts,
 figures, outputs, and reports. Organizing work into projects helps you
 avoid getting confused about where your files are and where R is looking
 for data.</p>
-<p>A good project folder might include: <em>insert table</em></p>
+<p>A good project folder might include:</p>
+<pre class="r"><code>project_folder &lt;- tribble(
+  ~`File Type`, ~`Examples`,
+  &quot;Data&quot;, &quot;CSV files, Excel files, or raw datasets.&quot;,
+  &quot;Scripts&quot;, &quot;.R files that contain saved code.&quot;,
+  &quot;Reports&quot;, &quot;.Rmd or Quarto files that combine code, writing, and output.&quot;,
+  &quot;Figures&quot;, &quot;Plots or images saved from R.&quot;,
+  &quot;Outputs&quot;, &quot;Rendered reports, tables, PDFs, or HTML files.&quot;
+)
+
+project_folder |&gt;
+  kable()</code></pre>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">File Type</th>
+<th align="left">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Data</td>
+<td align="left">CSV files, Excel files, or raw datasets.</td>
+</tr>
+<tr class="even">
+<td align="left">Scripts</td>
+<td align="left">.R files that contain saved code.</td>
+</tr>
+<tr class="odd">
+<td align="left">Reports</td>
+<td align="left">.Rmd or Quarto files that combine code, writing, and
+output.</td>
+</tr>
+<tr class="even">
+<td align="left">Figures</td>
+<td align="left">Plots or images saved from R.</td>
+</tr>
+<tr class="odd">
+<td align="left">Outputs</td>
+<td align="left">Rendered reports, tables, PDFs, or HTML files.</td>
+</tr>
+</tbody>
+</table>
 <p>Try not to rely only on the Console. Save your code in scripts of R
-Markdown documents so you can rerun it later.</p>
+Markdown documents so you can rerun it later. Your future self will
+thank you!</p>
 </div>
 <div id="remember-that-r-is-literal" class="section level3">
 <h3>Remember that R is literal</h3>
-<p>R is very powerful, but its also veyr picky. If your object is named
-lily_rocks but you type lilyrocks, R won’t understand. Typos,
-capitalization, spaces, and punctuation matter. learning how to give
-precise instructions is very important for this class. Its also helpful
-to practice building your own personal code rules, like always putting
-your titles in snake_case. If you are using R in the future, its helpful
-to stay consistent.</p>
-<p>A few beginner habits that might help: <em>insert table</em></p>
+<p>R is very powerful, but it is also very picky. If your object is
+named lily_rocks but you type lilyrocks, R will not understand. Typos,
+capitalization, spaces, and punctuation matter.</p>
+<p>It is also helpful to practice building your own personal code rules,
+such as consistently using snake_case for object names. If you use R in
+the future, consistency will make your code much easier to read and
+fix.</p>
+<p>A few beginner habits that might help:</p>
+<pre class="r"><code>beginner_habits &lt;- tribble(
+  ~`Habit`, ~`Why It Helps`,
+  &quot;Use clear object names&quot;, &quot;Makes your code easier to understand later.&quot;,
+  &quot;Use snake_case&quot;, &quot;Keeps names readable and consistent.&quot;,
+  &quot;Add comments with #&quot;, &quot;Explains what your code is doing.&quot;,
+  &quot;Run code from the beginning&quot;, &quot;Checks whether your work is reproducible.&quot;,
+  &quot;Save code in scripts or R Markdown files&quot;, &quot;Lets you reuse, revise, and troubleshoot your work later.&quot;,
+  &quot;Check spelling carefully&quot;, &quot;Prevents small typos from causing confusing errors.&quot;
+)
+
+beginner_habits |&gt;
+  kable()</code></pre>
+<table>
+<colgroup>
+<col width="41%" />
+<col width="58%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Habit</th>
+<th align="left">Why It Helps</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Use clear object names</td>
+<td align="left">Makes your code easier to understand later.</td>
+</tr>
+<tr class="even">
+<td align="left">Use snake_case</td>
+<td align="left">Keeps names readable and consistent.</td>
+</tr>
+<tr class="odd">
+<td align="left">Add comments with #</td>
+<td align="left">Explains what your code is doing.</td>
+</tr>
+<tr class="even">
+<td align="left">Run code from the beginning</td>
+<td align="left">Checks whether your work is reproducible.</td>
+</tr>
+<tr class="odd">
+<td align="left">Save code in scripts or R Markdown files</td>
+<td align="left">Lets you reuse, revise, and troubleshoot your work
+later.</td>
+</tr>
+<tr class="even">
+<td align="left">Check spelling carefully</td>
+<td align="left">Prevents small typos from causing confusing
+errors.</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="understand-reproducibility" class="section level3">
 <h3>Understand reproducibility</h3>
-<p>Reproducibility means that someone else (or your future self) can
+<p>Reproducibility means that someone else, or your future self, can
 recreate your work from your code and data. Reproducibility is central
-to data science practices. One thing that really helped me out in this
-class is writing little notes to myself within the code that explains
-what it means/does (you can do this by putting # in front of the
-sentence)</p>
-<p>In this class, reproducible work means: <em>insert table</em></p>
+to data science practice.</p>
+<p>One thing that helped me in this class was writing little notes to
+myself within the code explaining what each section does. You can do
+this by putting # in front of the sentence. These comments may feel
+unnecessary in the moment, but they are extremely helpful when you
+return to your work later.</p>
+<p>In this class, reproducible work means:</p>
+<pre class="r"><code>reproducibility &lt;- tribble(
+  ~`Goal`, ~`What It Means`,
+  &quot;Tables and figures come from code&quot;, &quot;Avoid manually copying and pasting results when R can generate them.&quot;,
+  &quot;Code works when rerun&quot;, &quot;Run everything from the beginning to make sure it still works.&quot;,
+  &quot;Code is organized&quot;, &quot;Keep files in clear project folders.&quot;,
+  &quot;Code is documented&quot;, &quot;Use comments and written explanation.&quot;,
+  &quot;Decisions are understandable&quot;, &quot;Explain why you made choices in your analysis.&quot;,
+  &quot;Work can be extended&quot;, &quot;Write code that you or someone else could adapt later.&quot;
+)
+
+reproducibility |&gt;
+  kable()</code></pre>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Goal</th>
+<th align="left">What It Means</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Tables and figures come from code</td>
+<td align="left">Avoid manually copying and pasting results when R can
+generate them.</td>
+</tr>
+<tr class="even">
+<td align="left">Code works when rerun</td>
+<td align="left">Run everything from the beginning to make sure it still
+works.</td>
+</tr>
+<tr class="odd">
+<td align="left">Code is organized</td>
+<td align="left">Keep files in clear project folders.</td>
+</tr>
+<tr class="even">
+<td align="left">Code is documented</td>
+<td align="left">Use comments and written explanation.</td>
+</tr>
+<tr class="odd">
+<td align="left">Decisions are understandable</td>
+<td align="left">Explain why you made choices in your analysis.</td>
+</tr>
+<tr class="even">
+<td align="left">Work can be extended</td>
+<td align="left">Write code that you or someone else could adapt
+later.</td>
+</tr>
+</tbody>
+</table>
 <p>A simple test: could you reopen your project in a month and
-understand what you did? if not, add more comments, organize better, and
-make your workflow clearer.</p>
+understand what you did? If not, add more comments, organize your files
+more clearly, and make your workflow easier to follow.</p>
 </div>
 <div id="portfolios" class="section level3">
 <h3>Portfolios</h3>
-<p>The portfolios are more than just a collection of final products. It
-should be a record of your practice. it should show how your thinking
-developed over time through tying, revising, exploring, and
-reflecting.</p>
-<p>Each portfolio could include: <em>insert table</em></p>
+<p>The portfolio is more than just a collection of final products. It is
+a record of your practice. It should show how your thinking developed
+over time through trying, revising, exploring, and reflecting.</p>
+<p>Each portfolio could include:</p>
+<pre class="r"><code>portfolio &lt;- tribble(
+  ~`Section`, ~`What to Explain`,
+  &quot;Goal&quot;, &quot;What question, idea, or challenge were you exploring?&quot;,
+  &quot;Product&quot;, &quot;What did you create, such as a plot, app, function, dashboard, or code?&quot;,
+  &quot;Data&quot;, &quot;What data did you use, and how did you prepare it?&quot;,
+  &quot;Interpretation&quot;, &quot;What did you notice, learn, or want to try next?&quot;
+)
+
+portfolio |&gt;
+  kable()</code></pre>
+<table>
+<colgroup>
+<col width="17%" />
+<col width="82%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Section</th>
+<th align="left">What to Explain</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Goal</td>
+<td align="left">What question, idea, or challenge were you
+exploring?</td>
+</tr>
+<tr class="even">
+<td align="left">Product</td>
+<td align="left">What did you create, such as a plot, app, function,
+dashboard, or code?</td>
+</tr>
+<tr class="odd">
+<td align="left">Data</td>
+<td align="left">What data did you use, and how did you prepare it?</td>
+</tr>
+<tr class="even">
+<td align="left">Interpretation</td>
+<td align="left">What did you notice, learn, or want to try next?</td>
+</tr>
+</tbody>
+</table>
 <p>The portfolio is a place to show growth. Some pieces may be finished
-and polished, while others may be experiemntal or unfinishied. What
+and polished, while others may be experimental or unfinished. What
 matters is that they show your process.</p>
 </div>
 <div id="a-typical-weekly-workflow" class="section level3">
 <h3>A typical weekly workflow</h3>
 <p>It took me a while to figure out all the moving parts of this class,
-so don’t feel bad if theres a big learning curve. Thats why I wrote this
-guide!</p>
+so do not feel bad if there is a big learning curve. That is why I wrote
+this guide!</p>
 <p>Here is a simple workflow you can follow for most modules or
-asisngments: 1. Start on the course notes website. 2. Find the correct
-module. 3. Watch the assigned videos. 4. Review the slides and lecture
-notes. 5. Read the assigned textbook or tutorial sections. 6. Open the
-activity or lab instructions. 7. Open the correct RStudio Project. 8.
-Work in an R script or R Markdown document. 9. Run your code carefully.
-10. Add comments and written explanations. 11. Knit or render your
-document if needed. 12. Commit your changes. 13. Push your work to
-GitHub. 14. Check GitHub to make sure your work is there.</p>
+assignments:</p>
+<ol style="list-style-type: decimal">
+<li>Start on the course notes website.</li>
+<li>Find the correct module.</li>
+<li>Watch the assigned videos.</li>
+<li>Review the slides and lecture notes.</li>
+<li>Read the assigned textbook or tutorial sections.</li>
+<li>Open the activity or lab instructions.</li>
+<li>Open the correct RStudio Project.</li>
+<li>Work in an R script or R Markdown document.</li>
+<li>Run your code carefully.</li>
+<li>Add comments and written explanations.</li>
+<li>Knit or render your document if needed.</li>
+<li>Commit your changes.</li>
+<li>Push your work to GitHub.</li>
+<li>Check GitHub to make sure your work is there.</li>
+<li>Ask Dr. Garrison a LOT of questions.</li>
+</ol>
 </div>
 <div id="troubleshooting-tips" class="section level3">
 <h3>Troubleshooting tips</h3>
 <p>Be prepared to mess up. A lot. Errors are normal. They are a big part
-of learning R and GitHub.</p>
-<p>here are some common errors I’ve encountered and some things you can
-try: <em>insert table</em></p>
+of learning R and GitHub. Remember that Dr. Garrison is super smart and
+loves to help!</p>
+<p>Here are some common errors I encountered and some things you can
+try:</p>
+<pre class="r"><code>troubleshooting &lt;- tribble(
+  ~`Problem`, ~`What to Try First`,
+  &quot;Object not found&quot;, &quot;Check spelling, capitalization, and whether you ran the earlier code that created the object.&quot;,
+  &quot;Package will not load&quot;, &quot;Install it first with install.packages() and then load it with library().&quot;,
+  &quot;File not found&quot;, &quot;Check your working directory and make sure the file is in your project folder.&quot;,
+  &quot;Plot looks wrong&quot;, &quot;Check variable names, grouping, missing values, and whether the correct data frame is being used.&quot;,
+  &quot;R Markdown will not knit&quot;, &quot;Restart R, run chunks from the top, and read the first error message carefully.&quot;,
+  &quot;GitHub push fails&quot;, &quot;Make sure you committed your changes first. You may also need to pull before pushing.&quot;,
+  &quot;Code worked before but not now&quot;, &quot;Restart RStudio, clear your workspace if needed, and rerun everything from the beginning.&quot;
+)
+
+troubleshooting |&gt;
+  kable()</code></pre>
+<table>
+<colgroup>
+<col width="24%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Problem</th>
+<th align="left">What to Try First</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Object not found</td>
+<td align="left">Check spelling, capitalization, and whether you ran the
+earlier code that created the object.</td>
+</tr>
+<tr class="even">
+<td align="left">Package will not load</td>
+<td align="left">Install it first with install.packages() and then load
+it with library().</td>
+</tr>
+<tr class="odd">
+<td align="left">File not found</td>
+<td align="left">Check your working directory and make sure the file is
+in your project folder.</td>
+</tr>
+<tr class="even">
+<td align="left">Plot looks wrong</td>
+<td align="left">Check variable names, grouping, missing values, and
+whether the correct data frame is being used.</td>
+</tr>
+<tr class="odd">
+<td align="left">R Markdown will not knit</td>
+<td align="left">Restart R, run chunks from the top, and read the first
+error message carefully.</td>
+</tr>
+<tr class="even">
+<td align="left">GitHub push fails</td>
+<td align="left">Make sure you committed your changes first. You may
+also need to pull before pushing.</td>
+</tr>
+<tr class="odd">
+<td align="left">Code worked before but not now</td>
+<td align="left">Restart RStudio, clear your workspace if needed, and
+rerun everything from the beginning.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="final-advice" class="section level3">
+<h3>Final advice</h3>
+<p>My biggest advice is to focus on building good habits. You probably
+will not memorize the entire R language in one class, and even if you
+do, you may forget some of it later. What matters more is learning how
+to build a reproducible workflow, communicate clearly with R,
+troubleshoot errors, and know where to look when you get stuck.</p>
+<p>Start with the course website, keep your files organized, use RStudio
+Projects, comment your code, commit and push regularly, and ask specific
+questions when something does not work. Over time, the process will
+start to feel much less intimidating.</p>
+<p>Good luck!</p>
+</div>
 </div>
 
 
