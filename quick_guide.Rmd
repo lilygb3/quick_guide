@@ -173,7 +173,7 @@ blockquote {
 The course website is your home base. This is where you should begin when you are trying to figure out what to do for a module, lab, activity, or assignment. The website links together the major course materials, including lecture notes, videos, slides, labs, readings, and GitHub resources. Dr. Garrison notes that while course materials can also be accessed through GitHub, the course notes website is usually the easiest place to navigate from.
 
 <div class="tip-box">
-<strong>Student tip:</strong> When you feel lost, start by going back to the course website. It is much easier than digging through old files or trying to remember where something was posted.
+<strong>Hint:</strong> When you feel lost, start by going back to the course website. It is much easier than digging through old files or trying to remember where something was posted.
 </div>
 
 ### Big Picture
@@ -271,7 +271,7 @@ At the beginning, it is helpful to focus on the main GitHub cycle:
 5. Check GitHub to make sure your work appeared online.
 
 <div class="warning-box">
-<strong>Do not panic:</strong> GitHub is confusing at first for almost everyone. Focus on the basic cycle: save, commit, push, and check GitHub.
+<strong>Hint:</strong> GitHub is confusing at first for almost everyone. Focus on the basic cycle: save, commit, push, and check GitHub.
 </div>
 
 ### Build a Thoughtful Workflow
@@ -291,6 +291,10 @@ At the beginning, it is helpful to focus on the main GitHub cycle:
 - how your progress is tracked through GitHub
 
 In this class, you are not just learning isolated R functions. You are learning how to work like a data scientist by keeping your work organized, transparent, and reproducible.
+
+<div class="success-box">
+<strong>Hint:</strong> The goal is not to become perfect at R overnight. The goal is to build a workflow that helps you organize your work, find mistakes, and return to your projects later.
+</div>
 
 ### Use RStudio Projects
 
@@ -317,7 +321,7 @@ project_folder %>%
   )
 ```
 
-Try not to rely only on the Console. Save your code in scripts of R Markdown documents so you can rerun it later. Your future self will thank you!
+Try not to rely only on the Console. Save your code in scripts or R Markdown documents so you can rerun it later. Your future self will thank you!
 
 ### Remember: R is Literal
 
@@ -346,6 +350,10 @@ beginner_habits %>%
     position = "center"
   )
 ```
+
+<div class="warning-box">
+<strong>Hint:</strong> Tiny details matter in R. A missing underscore, capital letter, or quotation mark can change whether your code works.
+</div>
 
 ### Understand Reproducibility
 
@@ -451,10 +459,6 @@ troubleshooting %>%
     position = "center"
   )
 ```
-
-<div class="tip-box">
-<strong>Best troubleshooting habit:</strong> Read the first error message carefully. The first error is usually more helpful than the last one.
-</div>
 
 ### Final advice
 
