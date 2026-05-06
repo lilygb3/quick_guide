@@ -7,6 +7,8 @@ output: html_document
 ```{r packages, include=FALSE}
 library(tidyverse)
 library(knitr)
+
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Welcome to Data Science for Psychologists!
@@ -99,11 +101,17 @@ At the beginning, it is helpful to focus on the main GitHub cycle:
 ### Build a thoughtful workflow
 
 *Workflow matters.* The workflow can be just as important as learning the language itself. A strong workflow means knowing:
+
 - where your files live
+
 - where your data is stored
+
 - how your code is saved
+
 - how your results are created
+
 - how your work is documented
+
 - how your progress is tracked through GitHub
 
 In this class, you are not just learning isolated R functions. You are learning how to work like a data scientist by keeping your work organized, transparent, and reproducible.

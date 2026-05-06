@@ -379,17 +379,6 @@ easiest place to navigate from.</p>
 introduces students to data wrangling, modeling, visualization, and
 communication.</p>
 <p>The course is built around five major ideas:</p>
-<pre class="r"><code>big_ideas &lt;- tribble(
-  ~`Big Idea`, ~`What It Means`,
-  &quot;Reproducibility&quot;, &quot;Your work should be possible to rerun, check, and verify.&quot;,
-  &quot;Replication&quot;, &quot;Data work should support trustworthy and repeatable scientific practice.&quot;,
-  &quot;Robust Methods&quot;, &quot;Your analyses should be thoughtful, reliable, and appropriate for the question.&quot;,
-  &quot;Resplendent Visualizations&quot;, &quot;Graphs should communicate clearly, honestly, and effectively.&quot;,
-  &quot;R Programming&quot;, &quot;You will learn to use R as a practical tool for working with data.&quot;
-)
-
-big_ideas |&gt;
-  kable()</code></pre>
 <table>
 <colgroup>
 <col width="25%" />
@@ -444,20 +433,6 @@ will learn which ones are most helpful for your own learning style.</p>
 <p>You do not necessarily need to use every single material every single
 time, but early in the course, it helps to explore all of them so you
 understand what each resource is for.</p>
-<pre class="r"><code>materials &lt;- tribble(
-  ~`Resource`, ~`How to Use It`,
-  &quot;Course notes website&quot;, &quot;Start here for each module, lab, activity, and assignment.&quot;,
-  &quot;Videos&quot;, &quot;Use these to see concepts and workflows explained step-by-step.&quot;,
-  &quot;Slides&quot;, &quot;Use these to review lecture material and follow along with class content.&quot;,
-  &quot;Textbook/readings&quot;, &quot;Use these for deeper explanations when concepts are confusing.&quot;,
-  &quot;Activities&quot;, &quot;Use these to practice smaller pieces of the workflow.&quot;,
-  &quot;Labs&quot;, &quot;Use these to apply skills in a fuller, project-like format.&quot;,
-  &quot;GitHub&quot;, &quot;Use this to store, track, and share your work.&quot;,
-  &quot;Portfolio&quot;, &quot;Use this to show your growth, process, and data science practice over time.&quot;
-)
-
-materials |&gt;
-  kable()</code></pre>
 <table>
 <colgroup>
 <col width="21%" />
@@ -516,17 +491,6 @@ practice over time.</td>
 <h3>Meet the main tools</h3>
 <p>A lot of the class will involve learning how different tools work
 together. The basic toolkit includes R, RStudio, Git, and GitHub.</p>
-<pre class="r"><code>tools &lt;- tribble(
-  ~`Tool`, ~`What It Is`, ~`Why It Matters`,
-  &quot;R&quot;, &quot;A free software environment for statistics and graphics.&quot;, &quot;This is the main coding language used in the course.&quot;,
-  &quot;RStudio&quot;, &quot;An interface, or IDE, for using R.&quot;, &quot;This is where you write, run, and organize code.&quot;,
-  &quot;R Markdown&quot;, &quot;A document format that combines writing, code, tables, and figures.&quot;, &quot;This helps make reports reproducible.&quot;,
-  &quot;Git&quot;, &quot;A version control system.&quot;, &quot;This tracks changes to your files over time.&quot;,
-  &quot;GitHub&quot;, &quot;An online platform for Git-tracked projects.&quot;, &quot;This stores, shares, and organizes your work.&quot;
-)
-
-tools |&gt;
-  kable()</code></pre>
 <table>
 <colgroup>
 <col width="8%" />
@@ -598,10 +562,15 @@ cycle:</p>
 <div id="build-a-thoughtful-workflow" class="section level3">
 <h3>Build a thoughtful workflow</h3>
 <p><em>Workflow matters.</em> The workflow can be just as important as
-learning the language itself. A strong workflow means knowing: - where
-your files live - where your data is stored - how your code is saved -
-how your results are created - how your work is documented - how your
-progress is tracked through GitHub</p>
+learning the language itself. A strong workflow means knowing:</p>
+<ul>
+<li><p>where your files live</p></li>
+<li><p>where your data is stored</p></li>
+<li><p>how your code is saved</p></li>
+<li><p>how your results are created</p></li>
+<li><p>how your work is documented</p></li>
+<li><p>how your progress is tracked through GitHub</p></li>
+</ul>
 <p>In this class, you are not just learning isolated R functions. You
 are learning how to work like a data scientist by keeping your work
 organized, transparent, and reproducible.</p>
@@ -614,17 +583,6 @@ figures, outputs, and reports. Organizing work into projects helps you
 avoid getting confused about where your files are and where R is looking
 for data.</p>
 <p>A good project folder might include:</p>
-<pre class="r"><code>project_folder &lt;- tribble(
-  ~`File Type`, ~`Examples`,
-  &quot;Data&quot;, &quot;CSV files, Excel files, or raw datasets.&quot;,
-  &quot;Scripts&quot;, &quot;.R files that contain saved code.&quot;,
-  &quot;Reports&quot;, &quot;.Rmd or Quarto files that combine code, writing, and output.&quot;,
-  &quot;Figures&quot;, &quot;Plots or images saved from R.&quot;,
-  &quot;Outputs&quot;, &quot;Rendered reports, tables, PDFs, or HTML files.&quot;
-)
-
-project_folder |&gt;
-  kable()</code></pre>
 <table>
 <colgroup>
 <col width="14%" />
@@ -674,18 +632,6 @@ such as consistently using snake_case for object names. If you use R in
 the future, consistency will make your code much easier to read and
 fix.</p>
 <p>A few beginner habits that might help:</p>
-<pre class="r"><code>beginner_habits &lt;- tribble(
-  ~`Habit`, ~`Why It Helps`,
-  &quot;Use clear object names&quot;, &quot;Makes your code easier to understand later.&quot;,
-  &quot;Use snake_case&quot;, &quot;Keeps names readable and consistent.&quot;,
-  &quot;Add comments with #&quot;, &quot;Explains what your code is doing.&quot;,
-  &quot;Run code from the beginning&quot;, &quot;Checks whether your work is reproducible.&quot;,
-  &quot;Save code in scripts or R Markdown files&quot;, &quot;Lets you reuse, revise, and troubleshoot your work later.&quot;,
-  &quot;Check spelling carefully&quot;, &quot;Prevents small typos from causing confusing errors.&quot;
-)
-
-beginner_habits |&gt;
-  kable()</code></pre>
 <table>
 <colgroup>
 <col width="41%" />
@@ -738,18 +684,6 @@ this by putting # in front of the sentence. These comments may feel
 unnecessary in the moment, but they are extremely helpful when you
 return to your work later.</p>
 <p>In this class, reproducible work means:</p>
-<pre class="r"><code>reproducibility &lt;- tribble(
-  ~`Goal`, ~`What It Means`,
-  &quot;Tables and figures come from code&quot;, &quot;Avoid manually copying and pasting results when R can generate them.&quot;,
-  &quot;Code works when rerun&quot;, &quot;Run everything from the beginning to make sure it still works.&quot;,
-  &quot;Code is organized&quot;, &quot;Keep files in clear project folders.&quot;,
-  &quot;Code is documented&quot;, &quot;Use comments and written explanation.&quot;,
-  &quot;Decisions are understandable&quot;, &quot;Explain why you made choices in your analysis.&quot;,
-  &quot;Work can be extended&quot;, &quot;Write code that you or someone else could adapt later.&quot;
-)
-
-reproducibility |&gt;
-  kable()</code></pre>
 <table>
 <colgroup>
 <col width="33%" />
@@ -801,16 +735,6 @@ more clearly, and make your workflow easier to follow.</p>
 a record of your practice. It should show how your thinking developed
 over time through trying, revising, exploring, and reflecting.</p>
 <p>Each portfolio could include:</p>
-<pre class="r"><code>portfolio &lt;- tribble(
-  ~`Section`, ~`What to Explain`,
-  &quot;Goal&quot;, &quot;What question, idea, or challenge were you exploring?&quot;,
-  &quot;Product&quot;, &quot;What did you create, such as a plot, app, function, dashboard, or code?&quot;,
-  &quot;Data&quot;, &quot;What data did you use, and how did you prepare it?&quot;,
-  &quot;Interpretation&quot;, &quot;What did you notice, learn, or want to try next?&quot;
-)
-
-portfolio |&gt;
-  kable()</code></pre>
 <table>
 <colgroup>
 <col width="17%" />
@@ -879,19 +803,6 @@ of learning R and GitHub. Remember that Dr. Garrison is super smart and
 loves to help!</p>
 <p>Here are some common errors I encountered and some things you can
 try:</p>
-<pre class="r"><code>troubleshooting &lt;- tribble(
-  ~`Problem`, ~`What to Try First`,
-  &quot;Object not found&quot;, &quot;Check spelling, capitalization, and whether you ran the earlier code that created the object.&quot;,
-  &quot;Package will not load&quot;, &quot;Install it first with install.packages() and then load it with library().&quot;,
-  &quot;File not found&quot;, &quot;Check your working directory and make sure the file is in your project folder.&quot;,
-  &quot;Plot looks wrong&quot;, &quot;Check variable names, grouping, missing values, and whether the correct data frame is being used.&quot;,
-  &quot;R Markdown will not knit&quot;, &quot;Restart R, run chunks from the top, and read the first error message carefully.&quot;,
-  &quot;GitHub push fails&quot;, &quot;Make sure you committed your changes first. You may also need to pull before pushing.&quot;,
-  &quot;Code worked before but not now&quot;, &quot;Restart RStudio, clear your workspace if needed, and rerun everything from the beginning.&quot;
-)
-
-troubleshooting |&gt;
-  kable()</code></pre>
 <table>
 <colgroup>
 <col width="24%" />
