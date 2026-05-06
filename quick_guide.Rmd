@@ -23,56 +23,150 @@ knitr::opts_chunk$set(
 ```
 
 <style>
+/* Overall page */
 body {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.65;
+  background-color: #f7f9fb;
+  color: #263238;
 }
 
-h1, h2, h3 {
-  margin-top: 35px;
+/* Main content area */
+.main-container {
+  max-width: 980px;
+  background-color: #ffffff;
+  padding: 35px 45px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
+/* Title */
 h1.title {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 38px;
+  font-weight: 800;
+  color: #244f6e;
+  margin-bottom: 8px;
+  border-bottom: 4px solid #9ec5d6;
+  padding-bottom: 12px;
 }
 
+/* Author/date area */
+.author {
+  color: #5c6f7b;
+  font-size: 17px;
+}
+
+/* Headings */
+h2, h3 {
+  margin-top: 38px;
+  color: #244f6e;
+  font-weight: 700;
+}
+
+h3 {
+  border-left: 6px solid #7fb3c8;
+  padding-left: 12px;
+  background-color: #eef6f9;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 6px;
+}
+
+/* Links */
+a {
+  color: #2c7da0;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #1b4965;
+}
+
+/* Callout boxes */
 .tip-box {
   background-color: #f0f7f4;
-  border-left: 5px solid #5c9478;
-  padding: 14px 18px;
-  margin: 20px 0;
-  border-radius: 6px;
+  border-left: 6px solid #5c9478;
+  padding: 15px 18px;
+  margin: 22px 0;
+  border-radius: 8px;
 }
 
 .warning-box {
   background-color: #fff7e6;
-  border-left: 5px solid #d99a2b;
-  padding: 14px 18px;
-  margin: 20px 0;
-  border-radius: 6px;
+  border-left: 6px solid #d99a2b;
+  padding: 15px 18px;
+  margin: 22px 0;
+  border-radius: 8px;
 }
 
 .reminder-box {
   background-color: #eef4ff;
-  border-left: 5px solid #5b7fc4;
-  padding: 14px 18px;
-  margin: 20px 0;
+  border-left: 6px solid #5b7fc4;
+  padding: 15px 18px;
+  margin: 22px 0;
+  border-radius: 8px;
+}
+
+.success-box {
+  background-color: #f3f8ee;
+  border-left: 6px solid #7aa95c;
+  padding: 15px 18px;
+  margin: 22px 0;
+  border-radius: 8px;
+}
+
+/* Tables */
+.table {
+  margin-top: 18px;
+  margin-bottom: 28px;
+  background-color: #ffffff;
+}
+
+.table thead {
+  background-color: #244f6e;
+  color: white;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #eef6f9;
+}
+
+/* Lists */
+li {
+  margin-bottom: 6px;
+}
+
+/* Block quotes */
+blockquote {
+  border-left: 5px solid #9ec5d6;
+  padding-left: 15px;
+  color: #455a64;
+  font-style: italic;
+  background-color: #f4f8fa;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 6px;
 }
 
-blockquote {
-  border-left: 5px solid #cccccc;
-  padding-left: 15px;
-  color: #555555;
-  font-style: italic;
+/* Floating table of contents */
+.tocify {
+  border-radius: 10px;
+  border: 1px solid #d6e4ea;
+}
+
+.tocify .active {
+  background-color: #244f6e !important;
+  color: white !important;
 }
 </style>
 
 ## Welcome to Data Science for Psychologists!
 
-This guide is meant to help future students get oriented and understand how the different parts of the class fit together. It is not a replacement for the course materials, but it can help you figure out where to start, what tools you will use, and how to build a workflow that makes the class feel more manageable.
+<div class="reminder-box">
+<strong>Purpose of this guide:</strong> This guide is meant to help future students get oriented and understand how the different parts of the class fit together. It is not a replacement for the course materials, but it can help you figure out where to start, what tools you will use, and how to build a workflow that makes the class feel more manageable.
+</div>
 
 ### Start with the Course Website
 
@@ -98,11 +192,12 @@ big_ideas <- tribble(
   "R Programming", "You will learn to use R as a practical tool for working with data."
 )
 
-big_ideas |>
-  kable() |>
+big_ideas %>% 
+  kable() %>% 
   kable_styling(
     bootstrap_options = c("striped", "hover", "condensed"),
-    full_width = FALSE
+    full_width = TRUE,
+    position = "center"
   )
 ```
 
@@ -127,11 +222,12 @@ materials <- tribble(
   "Portfolio", "Use this to show your growth, process, and data science practice over time."
 )
 
-materials |>
-  kable() |>
+materials %>% 
+  kable() %>% 
   kable_styling(
     bootstrap_options = c("striped", "hover", "condensed"),
-    full_width = FALSE
+    full_width = TRUE,
+    position = "center"
   )
 ```
 
@@ -149,11 +245,12 @@ tools <- tribble(
   "GitHub", "An online platform for Git-tracked projects.", "This stores, shares, and organizes your work."
 )
 
-tools |>
-  kable() |>
+tools %>% 
+  kable() %>% 
   kable_styling(
     bootstrap_options = c("striped", "hover", "condensed"),
-    full_width = FALSE
+    full_width = TRUE,
+    position = "center"
   )
 ```
 
@@ -211,11 +308,12 @@ project_folder <- tribble(
   "Outputs", "Rendered reports, tables, PDFs, or HTML files."
 )
 
-project_folder |>
-  kable() |>
+project_folder %>% 
+  kable() %>% 
   kable_styling(
     bootstrap_options = c("striped", "hover", "condensed"),
-    full_width = FALSE
+    full_width = TRUE,
+    position = "center"
   )
 ```
 
@@ -240,11 +338,12 @@ beginner_habits <- tribble(
   "Check spelling carefully", "Prevents small typos from causing confusing errors."
 )
 
-beginner_habits |>
-  kable() |>
+beginner_habits %>% 
+  kable() %>% 
   kable_styling(
     bootstrap_options = c("striped", "hover", "condensed"),
-    full_width = FALSE
+    full_width = TRUE,
+    position = "center"
   )
 ```
 
@@ -267,11 +366,12 @@ reproducibility <- tribble(
   "Work can be extended", "Write code that you or someone else could adapt later."
 )
 
-reproducibility |>
-  kable() |>
+reproducibility %>% 
+  kable() %>% 
   kable_styling(
     bootstrap_options = c("striped", "hover", "condensed"),
-    full_width = FALSE
+    full_width = TRUE,
+    position = "center"
   )
 ```
 
@@ -292,11 +392,12 @@ portfolio <- tribble(
   "Interpretation", "What did you notice, learn, or want to try next?"
 )
 
-portfolio |>
-  kable() |>
+portfolio  %>% 
+  kable() %>% 
   kable_styling(
     bootstrap_options = c("striped", "hover", "condensed"),
-    full_width = FALSE
+    full_width = TRUE,
+    position = "center"
   )
 ```
 
@@ -342,11 +443,12 @@ troubleshooting <- tribble(
   "Code worked before but not now", "Restart RStudio, clear your workspace if needed, and rerun everything from the beginning."
 )
 
-troubleshooting |>
-  kable() |>
+troubleshooting %>% 
+  kable() %>% 
   kable_styling(
     bootstrap_options = c("striped", "hover", "condensed"),
-    full_width = FALSE
+    full_width = TRUE,
+    position = "center"
   )
 ```
 

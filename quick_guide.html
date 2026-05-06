@@ -1816,53 +1816,136 @@ Science for Psychologists</h1>
 
 
 <style>
+
 body {
 font-size: 16px;
-line-height: 1.6;
+line-height: 1.65;
+background-color: #f7f9fb;
+color: #263238;
 }
-h1, h2, h3 {
-margin-top: 35px;
+
+.main-container {
+max-width: 980px;
+background-color: #ffffff;
+padding: 35px 45px;
+margin-top: 25px;
+margin-bottom: 40px;
+border-radius: 14px;
+box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
+
 h1.title {
-font-size: 36px;
-font-weight: 700;
-margin-bottom: 10px;
+font-size: 38px;
+font-weight: 800;
+color: #244f6e;
+margin-bottom: 8px;
+border-bottom: 4px solid #9ec5d6;
+padding-bottom: 12px;
 }
+
+.author {
+color: #5c6f7b;
+font-size: 17px;
+}
+
+h2, h3 {
+margin-top: 38px;
+color: #244f6e;
+font-weight: 700;
+}
+h3 {
+border-left: 6px solid #7fb3c8;
+padding-left: 12px;
+background-color: #eef6f9;
+padding-top: 8px;
+padding-bottom: 8px;
+border-radius: 6px;
+}
+
+a {
+color: #2c7da0;
+font-weight: 600;
+}
+a:hover {
+color: #1b4965;
+}
+
 .tip-box {
 background-color: #f0f7f4;
-border-left: 5px solid #5c9478;
-padding: 14px 18px;
-margin: 20px 0;
-border-radius: 6px;
+border-left: 6px solid #5c9478;
+padding: 15px 18px;
+margin: 22px 0;
+border-radius: 8px;
 }
 .warning-box {
 background-color: #fff7e6;
-border-left: 5px solid #d99a2b;
-padding: 14px 18px;
-margin: 20px 0;
-border-radius: 6px;
+border-left: 6px solid #d99a2b;
+padding: 15px 18px;
+margin: 22px 0;
+border-radius: 8px;
 }
 .reminder-box {
 background-color: #eef4ff;
-border-left: 5px solid #5b7fc4;
-padding: 14px 18px;
-margin: 20px 0;
+border-left: 6px solid #5b7fc4;
+padding: 15px 18px;
+margin: 22px 0;
+border-radius: 8px;
+}
+.success-box {
+background-color: #f3f8ee;
+border-left: 6px solid #7aa95c;
+padding: 15px 18px;
+margin: 22px 0;
+border-radius: 8px;
+}
+
+.table {
+margin-top: 18px;
+margin-bottom: 28px;
+background-color: #ffffff;
+}
+.table thead {
+background-color: #244f6e;
+color: white;
+}
+.table-hover tbody tr:hover {
+background-color: #eef6f9;
+}
+
+li {
+margin-bottom: 6px;
+}
+
+blockquote {
+border-left: 5px solid #9ec5d6;
+padding-left: 15px;
+color: #455a64;
+font-style: italic;
+background-color: #f4f8fa;
+padding-top: 10px;
+padding-bottom: 10px;
 border-radius: 6px;
 }
-blockquote {
-border-left: 5px solid #cccccc;
-padding-left: 15px;
-color: #555555;
-font-style: italic;
+
+.tocify {
+border-radius: 10px;
+border: 1px solid #d6e4ea;
+}
+.tocify .active {
+background-color: #244f6e !important;
+color: white !important;
 }
 </style>
 <div id="welcome-to-data-science-for-psychologists" class="section level2">
 <h2>Welcome to Data Science for Psychologists!</h2>
-<p>This guide is meant to help future students get oriented and
-understand how the different parts of the class fit together. It is not
-a replacement for the course materials, but it can help you figure out
-where to start, what tools you will use, and how to build a workflow
-that makes the class feel more manageable.</p>
+<div class="reminder-box">
+<p><strong>Purpose of this guide:</strong> This guide is meant to help
+future students get oriented and understand how the different parts of
+the class fit together. It is not a replacement for the course
+materials, but it can help you figure out where to start, what tools you
+will use, and how to build a workflow that makes the class feel more
+manageable.</p>
+</div>
 <div id="start-with-the-course-website" class="section level3">
 <h3>Start with the Course Website</h3>
 <p>The course website is your home base. This is where you should begin
@@ -1884,7 +1967,7 @@ or trying to remember where something was posted.</p>
 introduces students to data wrangling, modeling, visualization, and
 communication.</p>
 <p>The course is built around five major ideas:</p>
-<table class="table table-striped table-hover table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed" style="color: black; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -1954,7 +2037,7 @@ will learn which ones are most helpful for your own learning style.</p>
 <p>You do not necessarily need to use every single material every single
 time, but early in the course, it helps to explore all of them so you
 understand what each resource is for.</p>
-<table class="table table-striped table-hover table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed" style="color: black; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2039,7 +2122,7 @@ time.
 <h3>Meet the Tools</h3>
 <p>A lot of the class will involve learning how different tools work
 together. The basic toolkit includes R, RStudio, Git, and GitHub.</p>
-<table class="table table-striped table-hover table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed" style="color: black; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2164,7 +2247,7 @@ figures, outputs, and reports. Organizing work into projects helps you
 avoid getting confused about where your files are and where R is looking
 for data.</p>
 <p>A good project folder might include:</p>
-<table class="table table-striped table-hover table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed" style="color: black; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2232,7 +2315,7 @@ such as consistently using snake_case for object names. If you use R in
 the future, consistency will make your code much easier to read and
 fix.</p>
 <p>A few beginner habits that might help:</p>
-<table class="table table-striped table-hover table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed" style="color: black; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2306,7 +2389,7 @@ this by putting # in front of the sentence. These comments may feel
 unnecessary in the moment, but they are extremely helpful when you
 return to your work later.</p>
 <p>In this class, reproducible work means:</p>
-<table class="table table-striped table-hover table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed" style="color: black; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2378,7 +2461,7 @@ more clearly, and make your workflow easier to follow.</p>
 a record of your practice. It should show how your thinking developed
 over time through trying, revising, exploring, and reflecting.</p>
 <p>Each portfolio could include:</p>
-<table class="table table-striped table-hover table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed" style="color: black; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -2460,7 +2543,7 @@ of learning R and GitHub. Remember that Dr. Garrison is super smart and
 loves to help!</p>
 <p>Here are some common errors I encountered and some things you can
 try:</p>
-<table class="table table-striped table-hover table-condensed" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed" style="color: black; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
